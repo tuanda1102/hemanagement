@@ -1,0 +1,94 @@
+{
+  "name": "my-webpack-project",
+  "version": "1.0.0",
+  "description": "My webpack project",
+  "private": true,
+  "scripts": {
+    "start:dev": "nodemon",
+    "build:dev": "webpack --config webpack.config.js",
+    "watch": "webpack-watch-server --config webpack.config.js",
+    "build": "webpack --mode=production --node-env=production --config webpack.config.prod.js",
+    "start:prod": "node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "webpack serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamshaunjp/webpack-and-typescript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamshaunjp/webpack-and-typescript/issues"
+  },
+  "homepage": "https://github.com/iamshaunjp/webpack-and-typescript#readme",
+  "devDependencies": {
+    "@types/node": "^17.0.23",
+    "@types/webpack": "^5.28.0",
+    "@webpack-cli/generators": "^2.4.2",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^10.2.4",
+    "declaration-bundler-webpack-plugin": "^1.0.3",
+    "ts-loader": "^9.2.8",
+    "typescript": "^4.6.3",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4",
+    "wepack-cli": "0.0.1-security"
+  },
+  "dependencies": {
+    "@types/algoliasearch": "^4.0.0",
+    "@types/bcrypt": "^5.0.0",
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/geoip-lite": "^1.4.1",
+    "@types/jsonwebtoken": "^8.5.5",
+    "@types/lodash": "^4.14.173",
+    "@types/multer": "^1.4.7",
+    "@types/nodemailer": "^6.4.4",
+    "aws-sdk": "^2.1100.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.4",
+    "babel-preset-es2015": "^6.24.1",
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "firebase": "8.8.0",
+    "firebase-admin": "^9.12.0",
+    "generate-package-json-webpack-plugin": "^2.6.0",
+    "generate-password": "^1.7.0",
+    "geoip-lite": "^1.4.2",
+    "googleapis": "^85.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "multer": "^1.4.4",
+    "mysql2": "^2.3.3",
+    "nodemailer": "6.6.1",
+    "nodemon": "^2.0.12",
+    "otplib": "^12.0.1",
+    "sequelize": "^6.17.0",
+    "sequelize-auto": "^0.8.8",
+    "tedious": "^14.4.0",
+    "ts-node": "^10.2.1",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "uuid": "^8.3.2"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "testRegex": ".*\\.spec\\.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "collectCoverageFrom": [
+      "**/*.(t|j)s"
+    ],
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  }
+}
